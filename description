@@ -1,0 +1,15 @@
+
+1. Import necessary modules: `ibm_watson` and `ibm_cloud_sdk_core.authenticators.IAMAuthenticator`.
+
+2. Set up API key and service URL: Replace `'your-api-key'` and `'your-service-url'` with your actual Watson Assistant credentials. The `assistant_id` is the ID of the assistant you created.
+
+3. Initialize Watson Assistant: Create an `IAMAuthenticator` instance with the API key, then initialize the `AssistantV2` instance with the authenticator and set the service URL.
+
+4. Create a new session: Call `create_session` to start a new session and obtain a session ID.
+
+5. Define `send_message` function: This function sends a message to the assistant and returns the response.
+
+6. Chat loop: A loop to continuously take user input, send it to the assistant, and print the response. The loop breaks when the user types 'exit'.
+
+7. Delete the session: After the conversation ends, delete the session to clean up.
+
